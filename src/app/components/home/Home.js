@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 
 import Emoji from 'shared/components/emoji/Emoji';
+import RainbowButton from 'shared/components/buttons/rainbowButton';
 
 import logo from 'app/logo.svg';
 import 'app/components/home/home.css';
@@ -18,14 +19,8 @@ class Home extends Component {
           <h1 className="title">Jessica&rsquo;s Inclusion Home Page</h1>
         </header>
 
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-        </ul>
+        <RainbowButton label="Home" route="/home"></RainbowButton>
+        <RainbowButton label="About" route="/about"></RainbowButton>
 
         <p>
           <Emoji randomHexCodes={[

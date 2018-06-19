@@ -1,0 +1,17 @@
+a.rainbowButton {
+  background-image: linear-gradient(to right, #d92626 0%, #d9d926 16.66667%, #26d926 33.33333%, #26d9d9 50%, #2626d9 66.66667%, #d926d9 83.33333%, #d92626 100%);
+  background-size: 1000%;
+  border-radius: 100px;
+  color: #fff;
+  display: inline-block;
+  font-family: 'Permanent Marker';
+  font-size: 2.000rem;
+  margin: 1.000rem;
+  padding: 1.000rem 3.000rem;
+  text-decoration: none; }
+  a.rainbowButton:hover {
+    animation: slide 2s linear infinite; }
+
+@keyframes slide {
+  to {
+    background-position: 100%; } }
